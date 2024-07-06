@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <title>Bootstrap Project</title>
+  <script src="https://kit.fontawesome.com/58385a3aa8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <row class="Row-1">
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid col align-self-start">
+        <a class="navbar-brand" href="#">
+          <i class="fa-brands fa-instagram"></i>
+          Instagram
+        </a>
+      </div>
+
+      <div class="c-4">
+        <ul class="nav nav-pills">
+
+          <li class="nav-item">
+            <button type="button" class="btn btn-success bg-success m-1" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">
+              Create a new post
+            </button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Caption:</span>
+                    <input type="text" class="form-control" placeholder="Add the caption of your post here"
+                      aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    <i class="fa-solid fa-camera"></i> <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Publish</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle bg-secondary text-light m-1" data-bs-toggle="dropdown" href="#"
+              role="button" aria-expanded="false"><i class="fa-solid fa-gear"></i></a>
+            <ul class="dropdown-menu dropdown-menu-lg-end">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Accesibility</a></li>
+              <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </row>
+
+  <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="cuadricula-tab" data-bs-toggle="tab" data-bs-target="#cuadricula"
+        type="button" role="tab" aria-controls="cuadricula" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="card-tab" data-bs-toggle="tab" data-bs-target="#card" type="button" role="tab"
+        aria-controls="card" aria-selected="false"><i class="fa-solid fa-stop"></i></button>
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="cuadricula" role="tabpanel" aria-labelledby="cuadricula-tab">
+      <div class="row gy-4">
+        <div class="col-4 d-flex align-items-stretch"><img
+          src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/37/28/93/undoubtedly-one-of-the.jpg?w=1400&h=1400&s=1"
+          class="card-img-top" alt="torres del paine mirador"></div>
+        <div class="col-4 d-flex align-items-stretch"><img
+          src="https://img.freepik.com/fotos-premium/volcan-valle-picos-nevados-kamchatka_219401-192.jpg"
+          class="card-img-top" alt="Hotel Nothofagus Huilo huilo"></div>
+        <div class="col-4 d-flex align-items-stretch"><img
+          src="https://i.pinimg.com/736x/c3/ef/22/c3ef22edc2b28ea97c8b57a202c62c64.jpg"
+          class="card-img-top" alt="Cochamo"></div>
+        <div class="col-4 d-flex align-items-stretch"><img
+          src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/37/28/93/undoubtedly-one-of-the.jpg?w=1400&h=1400&s=1"
+          class="card-img-top" alt="torres del paine mirador"></div>
+        <div class="col-4 d-flex align-items-stretch"><img
+          src="https://img.freepik.com/fotos-premium/volcan-valle-picos-nevados-kamchatka_219401-192.jpg"
+          class="card-img-top" alt="Hotel Nothofagus Huilo huilo"></div>
+        <div class="col-4 d-flex align-items-stretch"><img
+          src="https://i.pinimg.com/736x/c3/ef/22/c3ef22edc2b28ea97c8b57a202c62c64.jpg"
+          class="card-img-top" alt="Cochamo"></div>
+          
+        
+      </div>
+    </div>
+
+    <div class="tab-pane fade" id="card" role="tabpanel" aria-labelledby="card-tab">
+      <div class="flex-column row align-items-center">
+        <div class="card" style="width: 30rem;">
+          <div>
+            <h5 class="card-title m-3 border-box d-inline-flex">Mirador base Torres del Paine</h5>
+            <p class="d-inline-flex">01/10</p>
+          </div>
+          <img
+            src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/37/28/93/undoubtedly-one-of-the.jpg?w=1400&h=1400&s=1"
+            class="card-img-top" alt="torres del paine mirador">
+          <div class="card-body">
+            <p class="card-text">
+            <p><strong>250 Likes</strong></p>Some quick example text to build on the card title and make up the bulk of
+            the card's content.</p>
+          </div>
+        </div>
+
+        <div class="card" style="width: 30rem;">
+          <div>
+            <h5 class="card-title m-3 border-box d-inline-flex">Huilo Huilo</h5>
+            <p class="d-inline-flex">02/10</p>
+          </div>
+          <img
+            src="https://img.freepik.com/fotos-premium/volcan-valle-picos-nevados-kamchatka_219401-192.jpg"
+            class="card-img-top" alt="Hotel Nothofagus Huilo huilo">
+          <div class="card-body">
+            <p class="card-text">
+            <p><strong>128 Likes</strong></p>Some quick example text to build on the card title and make up the bulk of
+            the card's content.</p>
+          </div>
+        </div>
+
+        <div class="card" style="width: 30rem;">
+          <div>
+            <h5 class="card-title m-3 border-box d-inline-flex">Cochamo</h5>
+            <p class="d-inline-flex">03/10</p>
+          </div>
+          <img
+            src="https://i.pinimg.com/736x/c3/ef/22/c3ef22edc2b28ea97c8b57a202c62c64.jpg"
+            class="card-img-top" alt="Cochamo">
+          <div class="card-body">
+            <p class="card-text">
+            <p><strong>305 Likes</strong></p>Some quick example text to build on the card title and make up the bulk of
+            the card's content.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
